@@ -13,3 +13,7 @@ if ($Timer.IsPastDue) {
 Write-Host "PowerShell timer trigger function ran! TIME: $currentUTCtime"
 
 Write-Host "Github Action"
+$RG = New-AzResourceGroup -Name ben-func-work3 -Location "South Central US" -Force
+
+Write-Host $RG
+
